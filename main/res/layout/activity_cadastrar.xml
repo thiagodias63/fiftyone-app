@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_laucher_gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.CadastrarActivity">
+
+    <!-- <Spinner
+        android:inputType="text"
+        android:id="@+id/cliente"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:background="@color/foreColor"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Usuário:"
+        />
+        -->
+
+    <EditText
+        android:inputType="textCapCharacters"
+        android:id="@+id/cliente"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:background="@color/foreColor"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Cliente:"
+        />
+
+    <EditText
+        android:inputType="textCapCharacters"
+        android:id="@+id/servico"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:background="@color/foreColor"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Serviço:"
+        android:layout_below="@id/cliente"
+        />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/horas"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:background="@color/foreColor"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Esforço estimado (minutos):"
+        android:layout_below="@id/servico"
+        />
+
+    <EditText
+        android:inputType="date"
+        android:id="@+id/prazo"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:background="@color/foreColor"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Prazo:"
+        android:layout_below="@id/horas"
+        />
+
+    <Button
+        android:background="@drawable/buttons"
+        android:textColor="@color/ColorButtonText"
+        android:textStyle="bold"
+        android:id="@+id/btn_cadastrar"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:layout_below="@id/prazo"
+        />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_weight="1"
+            android:textColor="@color/ColorButtonText2"
+            android:background="@color/ColorButtonBackground"
+            android:textStyle="bold"
+            android:id="@+id/buttonHome"
+            android:text=" Home "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</RelativeLayout>

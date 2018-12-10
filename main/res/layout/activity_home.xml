@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_laucher_gradient"
+    >
+
+        <Button
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:textColor="@color/ColorButtonText"
+            android:textStyle="bold"
+            android:id="@+id/buttonCadastrarOrdem"
+            android:text="Cadastrar Ordens de Serviço"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:textColor="@color/ColorButtonText"
+            android:textStyle="bold"
+            android:id="@+id/buttonLiberarOrdem"
+            android:text="Ver Ordens Pendentes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonCadastrarOrdem"/>
+
+    <Button
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:textColor="@color/ColorButtonText"
+            android:textStyle="bold"
+            android:id="@+id/buttonConcluidas"
+            android:text="Ver Ordens Concluidas"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonLiberarOrdem"/>
+
+        <Button
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:textColor="@color/ColorButtonText"
+            android:textStyle="bold"
+            android:id="@+id/buttonVerOrdens"
+            android:text="Ver todas as Ordens"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonConcluidas"/>
+
+        <Button
+            android:layout_weight="1"
+            android:textColor="@color/ColorButtonText"
+            android:background="@drawable/buttons"
+            android:textStyle="bold"
+            android:id="@+id/buttonServicos"
+            android:text="Relatório de Serviços"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonVerOrdens"
+            />
+
+    <Button
+            android:layout_weight="1"
+            android:textColor="@color/ColorButtonText"
+            android:background="@drawable/buttons"
+            android:textStyle="bold"
+            android:id="@+id/buttonClientes"
+            android:text="Relatório de Clientes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonServicos"
+            />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_weight="1"
+            android:textColor="@color/ColorButtonText2"
+            android:background="@color/ColorButtonBackground"
+            android:textStyle="bold"
+            android:id="@+id/buttonSair"
+            android:text="Sair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
